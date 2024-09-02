@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
+  "dev": "webpack serve --mode development",
+  "build": "webpack --mode production",
+  "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "webpack --mode production && webpack-dev-server --open"
+},
   "dependencies": {
     "axios": "^1.7.6",
     "react": "^18.2.0",
